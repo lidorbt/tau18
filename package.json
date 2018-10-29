@@ -1,0 +1,45 @@
+{
+  "name": "tau18",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "public/main.js",
+  "author": "lidorbt",
+  "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "cross-env": "^5.2.0",
+    "electron-is-dev": "^1.0.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-jss": "^8.6.1",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-pack": "build --em.main=public/main.js",
+    "electron-dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "preelectron-pack": "npm build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "build": {
+    "appId": "com.example.electron-cra",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
