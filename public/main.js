@@ -1,18 +1,19 @@
 const electron = require('electron')
 const isDev = require('electron-is-dev')
 const path = require('path')
-
 const { app, BrowserWindow } = electron;
 
 let mainWindow;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 960,
+    width: 960,
+    height: 540,
     frame: false,
     webPreferences: { webSecurity: false }
   });
+
+  mainWindow.webContents.openDevTools()
 
   // mainWindow.maximize()
 

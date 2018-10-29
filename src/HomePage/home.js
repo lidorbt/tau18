@@ -1,19 +1,89 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid/Grid'
+import { withStyles } from '@material-ui/core';
 
-const Home = () => (
-  <Grid container justify='space-around'>
-    <Grid item xs={6} style={{ border: '1px black solid', height: 300 }} >
-      <img src={require('../assets/TelAvivInternationalStudentFilmFestival.png')} alt='Tel Aviv International Student Film Festival' /></Grid>
-    <Grid item xs={2} style={{ border: '1px black solid', height: 300 }} ></Grid>
-    <Grid item xs={1} style={{ border: '1px black solid', height: 300 }} ></Grid>
-  </Grid>
-)
+const Home = (props) => {
+  const { classes } = props
+  return (
+    <Fragment>
 
-// const Styles = () => {
-//   App: {
-//     backgroundColor: '#FBD0CC'
-//   }
-// }
+      <Grid container justify='space-around' alignItems='center'>
+        <Grid item xs={6} className={classes.Title} >
+          <img src={require('../assets/TelAvivInternationalStudentFilmFestival.png')}
+            alt='Tel Aviv International Student Film Festival'
+            className={classes.Img} />
+        </Grid>
+        <Grid item xs={3} className={classes.VideoBtn} >
+          <img src={require('../assets/Festival2018Videos.png')}
+            alt='Festival 2018 Videos'
+            className={classes.Img} />
+        </Grid>
+        <Grid item xs={1} className={classes.numIcon} >
+          <img src={require('../assets/#20.png')}
+            alt='#20'
+            className={classes.Img} />
+        </Grid>
+      </Grid>
 
-export default Home;
+      <Grid container justify='space-around' alignItems='flex-start'>
+        <Grid item xs={4} className={classes.SubTitle} >
+          <img src={require('../assets/WinningFilms.png')}
+            alt='Winning Films'
+            className={classes.Img} />
+        </Grid>
+        <Grid item xs={3} className={classes.VideoBtn} >
+          <img src={require('../assets/DigitalMedia.png')}
+            alt='Digital Media'
+            className={classes.Img} />
+        </Grid>
+        <Grid item xs={3} className={classes.VideoBtn} >
+          <img src={require('../assets/SelectionByTheIsraeliFilmCriticsAssociation.png')}
+            alt='Selection By The Israeli Film Critics Association'
+            className={classes.Img} />
+        </Grid>
+
+        <Grid container justify='space-around' alignItems='center'>
+          <Grid item xs={3} className={classes.VideoBtn} >
+            <img src={require('../assets/InternationalCometition.png')}
+              alt='International Cometition'
+              className={classes.Img} />
+          </Grid>
+          <Grid item xs={3} className={classes.VideoBtn} >
+            <img src={require('../assets/IsraeliCompetition.png')}
+              alt='Israeli Competition'
+              className={classes.Img} />
+          </Grid>
+          <Grid item xs={3} className={classes.VideoBtn} >
+            <img src={require('../assets/IndependentShortFilmCompetition.png')}
+              alt='Independent Short Film Competition'
+              className={classes.Img} />
+          </Grid>
+          <Grid item xs={1} className={classes.VideoBtn} />
+        </Grid>
+
+      </Grid>
+    </Fragment>
+
+  )
+}
+
+const Styles = {
+  Img: {
+    width: '100%',
+    height: '100%',
+  },
+  Title: {
+    height: '25vh'
+  },
+  SubTitle: {
+    height: '10vh'
+  },
+  VideoBtn: {
+    height: '30vh'
+  },
+  numIcon: {
+   height: '22vh'
+  }
+}
+
+export default withStyles(Styles)(Home);
