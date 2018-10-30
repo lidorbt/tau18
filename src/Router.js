@@ -1,8 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
-import { Grid, withStyles } from '@material-ui/core'
 import home from './HomePage/home';
-
 
 const routes = [
   {
@@ -11,12 +9,12 @@ const routes = [
     component: home,
   },
   {
-    path: '/winningFilms',
+    path: '/winningFilms/:typeId',
     /* title: 'Winning Films', */
     component: winningFilms,
   },
   {
-    path: '/video/:id',
+    path: '/winningFilms/:typeId/:filmId',
     /* title: 'video', */
     component: video,
   },
@@ -25,16 +23,16 @@ const routes = [
 const MainRouter = () => {
   return (
     <BrowserRouter>
-          <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={`/${route.path}`}
-                exact
-                component={route.component} />
-            ))}
-            <Redirect to={`/${routes[0].path}`} />
-          </Switch>
+      <Switch>
+        {routes.map((route, index) => (
+          <Route
+            key={index}
+            path={`/${route.path}`}
+            exact
+            component={route.component} />
+        ))}
+        <Redirect to={`/${routes[0].path}`} />
+      </Switch>
     </BrowserRouter>)
 }
 
