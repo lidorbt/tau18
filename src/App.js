@@ -4,8 +4,8 @@ import { MuiThemeProvider } from '@material-ui/core'
 import JssProvider from 'react-jss/lib/JssProvider'
 import { create } from 'jss'
 import { createGenerateClassName, jssPreset, withStyles } from '@material-ui/core/styles'
-import Home from './HomePage/home';
 import './App.css'
+import MainRouter from './Router'
 
 const generateClassName = createGenerateClassName()
 const jss = create({ ...jssPreset(), insertionPoint: 'insertion-point-jss' })
@@ -16,7 +16,7 @@ const App = props => {
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <MuiThemeProvider theme={theme}>
         <div className={classes.App}>
-          <Home />
+          <MainRouter />
         </div>
       </MuiThemeProvider>
     </JssProvider>

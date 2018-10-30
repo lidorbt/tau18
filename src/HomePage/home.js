@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid/Grid'
 import { withStyles } from '@material-ui/core';
+import { Link } from 'react-router-dom'
 
 const Home = (props) => {
   const { classes } = props
   return (
     <Fragment>
-
       <Grid container justify='space-around' alignItems='center'>
         <Grid item xs={6} className={classes.Title} >
           <img src={require('../assets/TelAvivInternationalStudentFilmFestival.png')}
@@ -14,9 +14,11 @@ const Home = (props) => {
             className={classes.Img} />
         </Grid>
         <Grid item xs={3} className={classes.VideoBtn} >
+        <Link to="ideas" params={{ testvalue: "hello" }}>
           <img src={require('../assets/Festival2018Videos.png')}
             alt='Festival 2018 Videos'
             className={classes.Img} />
+        </Link>
         </Grid>
         <Grid item xs={1} className={classes.numIcon} >
           <img src={require('../assets/#20.png')}
