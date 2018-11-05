@@ -7,11 +7,17 @@ import { createGenerateClassName, jssPreset, withStyles } from '@material-ui/cor
 import './App.css'
 import MainRouter from './Router'
 
+const styleNode = document.createComment("jss-insertion-point");
+document.head.insertBefore(styleNode, document.head.firstChild);
+
 const generateClassName = createGenerateClassName()
-const jss = create({ ...jssPreset(), insertionPoint: 'insertion-point-jss' })
+const jss = create({ ...jssPreset(), insertionPoint: 'jss-insertion-point', })
 
 const App = props => {
   const { classes } = props
+
+  console.log(window.location)
+
   return (
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <MuiThemeProvider theme={theme}>

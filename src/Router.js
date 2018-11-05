@@ -1,28 +1,27 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 import home from './HomePage/home';
+import WinningFilmsPage from './WinningFilmsPage/winningFilmsPage';
+import VideoPage from './VideoPage/VideoPage';
 
 const routes = [
   {
     path: '/home',
-    /* title: 'Home', */
     component: home,
   },
   {
-    path: '/winningFilms/:typeId',
-    /* title: 'Winning Films', */
-    component: winningFilms,
+    path: '/winningFilms/:type',
+    component: WinningFilmsPage,
   },
   {
-    path: '/winningFilms/:typeId/:filmId',
-    /* title: 'video', */
-    component: video,
+    path: '/winningFilms/:type/:filmId',
+    component: VideoPage,
   },
 ]
 
 const MainRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         {routes.map((route, index) => (
           <Route
@@ -31,9 +30,12 @@ const MainRouter = () => {
             exact
             component={route.component} />
         ))}
+        {/* <div>
+          {window.location.pathname.includes('index.html') && <Redirect to={`/${routes[0].path}`} />}
+        </div> */}
         <Redirect to={`/${routes[0].path}`} />
       </Switch>
-    </BrowserRouter>)
+    </HashRouter>)
 }
 
 export default MainRouter

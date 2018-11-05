@@ -9,8 +9,9 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 960,
     height: 540,
-    frame: false,
-    webPreferences: { webSecurity: false }
+    // frame: false,
+    nodeIntegration: false,
+    webPreferences: { webSecurity: true }
   });
 
   mainWindow.webContents.openDevTools()
@@ -34,3 +35,5 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
