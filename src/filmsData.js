@@ -1,18 +1,23 @@
 const filmsData = [
   {
-    key: 'TelAvivInternationalStudentFilmFestival',
+    key: 'Festival2018Videos',
     imageSrc: '../assets/Festival2018Videos.png',
     name: 'Festival 2018 Videos',
     films: [
       {
-        name: '',
+        name: 'Festival Teaser',
         videoUrl: '',
-        imageUrl: '',
+        imageUrl: '../assets/videoAssets/festival-videos/FestivalTeaser.png',
       },
       {
-        name: '',
+        name: 'Festival Highlights',
         videoUrl: '',
-        imageUrl: '',
+        imageUrl: '../assets/videoAssets/festival-videos/FestivalHighlights.jpg',
+      },
+      {
+        name: 'Before The Action',
+        videoUrl: '',
+        imageUrl: '../assets/videoAssets/festival-videos/BeforeTheAction.jpg',
       },
     ]
   },
@@ -23,14 +28,11 @@ const filmsData = [
     name: 'Digital Media',
     films: [
       {
-        name: '',
+        name: 'Homescape',
         videoUrl: '',
-        imageUrl: '',
-      },
-      {
-        name: '',
-        videoUrl: '',
-        imageUrl: '',
+        imageUrl: '../assets/videoAssets/digital-media/Homescape_digital_media.jpg',
+        title: 'BEST PROJECT',
+        director: 'Yotam Rozin'
       },
     ]
   },
@@ -51,7 +53,7 @@ const filmsData = [
         imageUrl: '',
       },
     ]
-    
+
   },
 
   {

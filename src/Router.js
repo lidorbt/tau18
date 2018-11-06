@@ -14,7 +14,7 @@ const routes = [
     component: WinningFilmsPage,
   },
   {
-    path: '/winningFilms/:type/:filmId',
+    path: '/winningFilms/:type/:filmName',
     component: VideoPage,
   },
 ]
