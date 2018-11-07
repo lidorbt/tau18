@@ -16,14 +16,12 @@ const filmsData = [
         videoUrl: '',
         imageUrl: '../assets/videoAssets/festival-videos/FestivalHighlights.png',
         directorEditor: 'Michael Morozov',
-        cinematographer: null,
       },
       {
         name: 'Before The Action',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/festival-videos/BeforeTheAction.png',
         directorEditor: 'Gosha Demin',
-        cinematographer: null
       },
     ]
   },
@@ -37,8 +35,8 @@ const filmsData = [
         name: 'Homescape',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/digital-media/Homescape.jpg',
-        title: 'BEST PROJECT',
-        director: 'Yotam Rozin'
+        titles: ['BEST PROJECT'],
+        director: 'Yotam Rozin',
       },
     ]
   },
@@ -47,8 +45,8 @@ const filmsData = [
     key: 'SelectionByTheIsraeliFilmCriticsAssociation',
     imageSrc: '../assets/SelectionByTheIsraeliFilmCriticsAssociation.png',
     name: 'Selection By The Israeli Film Critics Association',
-    title1: 'BEST FILM',
-    title2: 'SPECIAL MENTIONS',
+    leftHeader: 'BEST FILM',
+    rightHeader: 'SPECIAL MENTIONS',
     films: [
       {
         name: 'Love',
@@ -104,29 +102,45 @@ const filmsData = [
         name: 'Invisibly',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/international-cometition/Invisibly.jpg',
-        title: 'BEST FILM',
-        director: '',
-        from: ''
+        titles: ['BEST FILM'],
+        director: 'Áron Szentpéteri',
+        from: 'University of Theatre and Film Arts, Budapest'
       },
       {
         name: 'Where The SummerGoes',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/international-cometition/WhereTheSummerGoes.jpg',
+        titles: ['BEST EDITING'],
+        editor: 'Laura Gama Martins',
+        director: 'Pinheiro Vicente',
+        from: 'Lisbon Theatre and Film School, Purtugal'
       },
       {
         name: 'Excuse Me',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/international-cometition/ExcuseMe.jpg',
+        titles: ['BEST SCRIPT'],
+        subTitles: ['COURTESY OF BLACKPILLS'],
+        directorScreenwriter: 'Bernhard Wenger',
+        from: 'Film Academy Vienna, Austria'
       },
       {
         name: 'Luli',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/international-cometition/Luli.jpg',
+        titles: ['SPECIAL MENTION: BEST PERFORMANCE'],
+        cast: "Yuval Carmel & Ma'ayan Turgeman",
+        director: 'Yair Fridman, Hadar Saifan',
+        from: 'Beit Berl College, Israel'
       },
       {
         name: 'An Act Of Love',
         videoUrl: '',
         imageUrl: '../assets/videoAssets/international-cometition/AnActOfLove.jpg',
+        titles: ['BEST CINEMATOGRAPHY'],
+        cinematography: 'Sky Davies',
+        director: 'Lucy Knox',
+        from: 'Film and Television Department, Melbourne University, Australia'
       },
     ]
   },
@@ -137,14 +151,31 @@ const filmsData = [
     name: 'Israeli Competition',
     films: [
       {
-        name: '',
+        name: 'Well Done',
         videoUrl: '',
-        imageUrl: '',
+        imageUrl: '../assets/videoAssets/israeli-competition/WellDone.png',
+        titles: ['BEST FILM'],
+        subTitles: ['AWARDED BY THE MAYOR OF TEL AVIV-YAFO'],
+        director: 'Omer Ben Simon, Aryeh Hasfari',
+        from: 'Steve Tisch School of Film & Television, Tel Aviv University',
       },
       {
-        name: '',
+        name: 'Well Done',
         videoUrl: '',
-        imageUrl: '',
+        imageUrl: '../assets/videoAssets/israeli-competition/WellDone.png',
+        titles: ['BEST FILM'],
+        subTitles: ['AWARDED BY THE MAYOR OF TEL AVIV-YAFO'],
+        director: 'Omer Ben Simon, Aryeh Hasfari',
+        from: 'Steve Tisch School of Film & Television, Tel Aviv University',
+      },
+      {
+        name: 'Well Done',
+        videoUrl: '',
+        imageUrl: '../assets/videoAssets/israeli-competition/WellDone.png',
+        titles: ['BEST FILM'],
+        subTitles: ['AWARDED BY THE MAYOR OF TEL AVIV-YAFO'],
+        director: 'Omer Ben Simon, Aryeh Hasfari',
+        from: 'Steve Tisch School of Film & Television, Tel Aviv University',
       },
     ]
   },
