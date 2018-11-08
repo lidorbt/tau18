@@ -96,4 +96,4 @@ const Styles = {
   }
 }
 
-export default withStyles(Styles)(Home);
+export default withStyles(Styles)(Home)
