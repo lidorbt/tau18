@@ -31,8 +31,7 @@ const App = props => {
 
 const Styles = {
   App: {
-    marginTop: '5vh',
-    marginBottom: '5vh',
+    margin: '5vh',
   }
 }
 
