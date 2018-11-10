@@ -10,39 +10,39 @@ const Home = props => {
     <Fragment>
       <Grid container justify='space-around' alignItems='center'>
         <Grid item xs={6} className={classes.Title} >
-          <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/TelAvivInternationalStudentFilmFestival.png')}
+          <img src={require('../assets/homeAssets/TelAvivInternationalStudentFilmFestival.png')}
             alt='Tel Aviv International Student Film Festival'
             className={classes.Img} />
         </Grid>
         <Grid item xs={3} className={classes.VideoBtn} >
           <Link to={'winningFilms/Festival18Videos'}>
-            <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/Festival18Videos.png')}
+            <img src={require('../assets/homeAssets/Festival18Videos.png')}
               alt='Festival 2018 Videos'
               className={classes.Img} />
           </Link>
         </Grid>
         <Grid item xs={1} className={classes.numIcon} >
-          <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/twenty.png')}
+          <img src={require('../assets/homeAssets/twenty.png')}
             alt='#20'
             className={classes.Img} />
         </Grid>
       </Grid>
       <Grid container justify='space-around' alignItems='flex-start'>
         <Grid item xs={4} className={classes.SubTitle} >
-          <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/WinningFilms.png')}
+          <img src={require('../assets/homeAssets/WinningFilms.png')}
             alt='Winning Films'
             className={classes.Img} />
         </Grid>
         <Grid item xs={3} className={classes.VideoBtn} >
           <Link to={'winningFilms/DigitalMedia'}>
-            <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/DigitalMedia.png')}
+            <img src={require('../assets/homeAssets/DigitalMedia.png')}
               alt='Digital Media'
               className={classes.Img} />
           </Link>
         </Grid>
         <Grid item xs={3} className={classes.VideoBtn} >
           <Link to={'winningFilms/SelectionByTheIsraeliFilmCriticsAssociation'}>
-            <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/SelectionByTheIsraeliFilmCriticsAssociation.png')}
+            <img src={require('../assets/homeAssets/SelectionByTheIsraeliFilmCriticsAssociation.png')}
               alt='Selection By The Israeli Film Critics Association'
               className={classes.Img} />
           </Link>
@@ -50,21 +50,21 @@ const Home = props => {
         <Grid container justify='space-around' alignItems='center'>
           <Grid item xs={3} className={classes.VideoBtn} >
             <Link to={'winningFilms/InternationalCometition'}>
-              <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/InternationalCometition.png')}
+              <img src={require('../assets/homeAssets/InternationalCometition.png')}
                 alt='International Cometition'
                 className={classes.Img} />
             </Link>
           </Grid>
           <Grid item xs={3} className={classes.VideoBtn} >
             <Link to={'winningFilms/IsraeliCompetition'}>
-              <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/IsraeliCompetition.png')}
+              <img src={require('../assets/homeAssets/IsraeliCompetition.png')}
                 alt='Israeli Competition'
                 className={classes.Img} />
             </Link>
           </Grid>
           <Grid item xs={3} className={classes.VideoBtn} >
             <Link to={'winningFilms/IndependentShortFilmCompetition'}>
-              <img src={require(process.env.PUBLIC_URL + '/assets/homeAssets/IndependentShortFilmCompetition.png')}
+              <img src={require('../assets/homeAssets/IndependentShortFilmCompetition.png')}
                 alt='Independent Short Film Competition'
                 className={classes.Img} />
             </Link>
